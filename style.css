@@ -1,0 +1,277 @@
+@import url(reset.css);
+
+body {
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.container::before,
+.container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.container {
+    width: 70%;
+    position: relative;
+    margin-left: 15%;
+}
+
+h3, h4, li, img {
+    display: inline-block;
+}
+
+/* ------------------------------Header------------------------------------ */
+header {
+    background-image: linear-gradient(
+    60deg,
+    #fe6a82 10%,
+    #9225f0 
+    );
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #5b2680;
+    padding-top: 3rem;
+}
+
+h1, h5 {
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 11.6rem;
+    margin-top: 5rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 2.1rem;
+    padding-bottom: 12.9rem;
+}
+
+/*--------------------------Sections: first, second, third ---------------------------*/
+article {
+    width: 40rem;
+    display: inline-block;
+    position: absolute;
+}
+
+figure {
+    padding: 2.5rem 0;
+}
+
+img {
+    width: 36rem;
+}
+
+.first figure, .third figure {
+    float: right;
+}
+
+.second figure {
+    float: left;    
+}
+
+.first article {
+    left: 12rem;
+}
+
+.second article {
+    right: 6rem;
+    margin-top: 4rem;
+}
+
+.third article {
+    left: 14rem;
+}
+
+.first h4, .third h4 {
+    margin-top: -3.2rem;
+}
+
+.first h4 {
+    color: #e479d7;
+}
+
+.third h4 {
+    color: #e520b5;
+}
+
+.second h4{
+    color: #fb7f97;
+    margin-left: 4rem;
+}
+
+.first {
+    margin-top: 5rem;
+}
+
+.second {
+    margin-bottom: 4rem;
+}
+
+.third {
+    margin-top: 12rem;
+}
+
+h3 {
+    font-size: 2.7rem;
+    color: #5d1b99;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 20.7rem;
+    font-weight: bold;
+    display: relative;
+}
+
+p {
+    font-size: 1.499rem;
+    color: #430c74;
+}
+
+button {
+    font-weight: bold;
+    margin-top: 2rem;
+    background: none;
+    cursor: pointer;
+}
+
+.btn1 {
+    font-size: 1.8rem;
+    border: .2rem solid #c244c2;
+    color: #420e73;
+    padding: 1rem 2rem;
+}
+
+/*------------------------------Footer------------------------------------*/
+footer {
+    color: #450c75;
+    background-image: linear-gradient(
+    50deg,
+    #fe7fc4 30%,
+    #9729ee
+    );
+    height: 37rem;
+}
+
+footer h2 {
+    float: left;
+    text-align: left;
+    margin-top: 11rem;
+    color: #440c74;
+}
+
+form {
+    float: right; 
+    width: 35rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+input {
+    border-bottom: .2rem solid #440c74;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    color: #420e73;
+    padding-top: 1rem;
+    box-shadow: none;
+}
+
+input, textarea {
+    width: 35rem;
+    background: none;
+}
+
+textarea {
+    border: .2rem solid #440c74;
+    resize: none;
+}
+
+footer p {
+    font-size: 1.4rem;
+    padding-top: 2rem;
+}
+
+form p:last-of-type {
+    padding-bottom: 2rem;
+}
+
+.btn2 {
+    font-size: 1.6rem;
+    border: .2rem solid #fff;
+    color: #fff;
+    padding: 1rem 6rem; 
+}
+
+h2 {
+    font-size: 7.3rem;
+    color: #fff; 
+    font-weight: bold;
+    text-align: center;
+}
+
+/*------------------------------Extras------------------------------------*/
+.ideas {
+    background-image: url(wecreate-assets/img/fullbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -7rem;
+    height: 25rem;
+}
+
+.ideas h2 {
+    padding-top: 10rem;
+}
+
+.wave1, .wave2, .wave3 {
+    position: absolute;
+}
+
+.wave1 {
+    top: 24rem;
+    right: 0;
+}
+
+.wave2 img, .wave3 img {
+    width: 68rem;
+}
+
+.wave2  {
+    width: 55rem;
+    overflow: hidden;
+}
+
+.wave2 {
+    top: 32.5rem;
+    right: 0;
+}
+
+.wave3 {
+    top: 125.7rem;
+    left: -.1rem;
+}
+
