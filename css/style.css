@@ -1,0 +1,76 @@
+@import url(reset.css);
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.container {
+    width: 100%;
+    margin: 0 2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(
+    60deg,
+    #fe6a82 10%,
+    #9225f0 
+    );
+}
+
+nav li {
+    font-size: 33px;
+    line-height: 45px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:link,
+nav a:active,
+nav a:hover,
+nav a:visited { 
+    color: #582782;
+}
+
+
+ul {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 60px;
+}
+
+.tagline {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, .tagline {
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.tagline, h1, li {
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+}
+
+a {
+    font-weight: 500;
+}
+
+
+
