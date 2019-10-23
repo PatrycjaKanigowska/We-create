@@ -1,13 +1,21 @@
 @import url(reset.css);
 
 html {
-    font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif;  
+    //font-size: 62.5%;
+    //font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    
+}
+
+body {
+    color: #440c74;
 }
 
 .container {
     width: 100%;
-    margin: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 * {
@@ -23,8 +31,8 @@ header {
 }
 
 nav li {
-    font-size: 33px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 48px;
 }
 
 a {
@@ -39,19 +47,19 @@ nav a:visited {
     color: #582782;
 }
 
-
 ul {
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
 h1 {
-    font-size: 80px;
-    line-height: 60px;
+    font-size: 55px;
+    //line-height: 60px;
 }
 
 .tagline {
     font-size: 30px;
+    line-height: 36px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -72,5 +80,62 @@ a {
     font-weight: 500;
 }
 
+img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+section {
+    padding: 20px;
+}
+
+/*
+.first p::before {
+    content: "1.";
+    font-size: 390px;
+    color: #e579d7;
+    position: absolute;
+}
+*/
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #5f1b98;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.first p {
+    line-height: 16px;
+}
+
+.btn1_1,
+.btn2_1,
+.btn3_1 {
+    display: none;
+}
+
+.btn {
+    font-size: 17px;
+    border: 2px solid #c244c2;
+    color: #420e73;
+    padding: 8px 16px;   
+}
+
+.btn1_2,
+.btn2_2,
+.btn3_2 {
+    display: block;
+    margin: 0 auto;
+}
+
+h3,
+p,
+img {
+    padding-bottom: 15px;
+}
+
+
+    
 
 
