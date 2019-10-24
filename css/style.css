@@ -72,6 +72,11 @@ h1, .tagline {
     text-align: center;
 }
 
+input, label, textarea, .btn, img {
+    display: block;
+    margin: 0 auto;
+}
+
 h1{
     font-weight: bold;
 }
@@ -81,7 +86,6 @@ a {
 }
 
 img {
-    margin: 0 auto;
     max-width: 100%;
 }
 
@@ -112,18 +116,12 @@ h3 {
     padding: 8px 16px;
     background: none;
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
 }
 
 .btn1_1,
 .btn2_1,
 .btn3_1 {
     display: none;
-}
-
-input, label, textarea {
-    display: block;
 }
 
 .btn4 {
@@ -184,13 +182,79 @@ footer p {
     padding-bottom: 0;
 }
 
-/*
-.first p::before {
-    content: "1.";
-    font-size: 390px;
-    color: #e579d7;
-    position: absolute;
+@media (min-width: 480px) {
+   
+    .first p,
+    .second p,
+    .third p {
+        font-size: 16px;
+        line-height: 26px;
+        width: 70%;
+        max-width: 430px;
+    } 
+    
+    .first article,
+    .third article {
+        position: relative;
+        left: 24%;
+    }
+    
+    .second article {
+        position: relative;
+        left: 10%;
+    }
+    
+    .first p::before {
+        content: "1.";
+        font-family: 'Montserrat', sans-serif;
+        font-size: 290px;
+        font-weight: 700;
+        color: #e579d7;
+        position: absolute;
+        z-index: -1;
+        top: 120px;
+        left: -108px;
+    }
+    
+    .third p::before {
+        content: "3.";
+        font-family: 'Montserrat', sans-serif;
+        font-size: 290px;
+        font-weight: 700;
+        color: #e579d7;
+        position: absolute;
+        z-index: -1;
+        top: 120px;
+        left: -108px;
+    }
+    
+    .second p::before {
+        content: "2.";
+        font-family: 'Montserrat', sans-serif;
+        font-size: 290px;
+        font-weight: 700;
+        color: #fb8097;
+        position: absolute;
+        z-index: -1;
+        right: 100px;
+        top: 130px;
+        
+    }
+    
+    h3 {
+        font-size: 34px;
+        letter-spacing: 5px;
+    }
+    
+    .btn {
+        font-size: 22px;
+        padding: 10px 20px;
+    } 
+    
+    label {
+        font-size: 16px;
+    }
+    
 }
-*/
 
 
