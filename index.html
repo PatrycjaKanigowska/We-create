@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>We create</title> 
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
@@ -27,7 +27,11 @@
                     <button type="button" class="btn btn1_1">find out more</button> 
                 </article>
                 <figure>
-                        <img src="img/img1.jpg" alt="kid drawing">
+                        <img srcset="img/img1-480w.jpg 480w,
+                                    img/img1-800w.jpg 800w"
+                        sizes="(max-width: 480px) 480px,
+                               800px"
+                        src="img/img1-800w.jpg" alt="kid drawing">
                 </figure>
                 <button type="button" class="btn btn1_2">find out more</button>
             </div>
