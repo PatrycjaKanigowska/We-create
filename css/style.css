@@ -68,6 +68,8 @@ h1, .tagline {
     padding-bottom: 30px;
 }
 
+
+
 .tagline, h1, li, h2, footer p {
     text-align: center;
 }
@@ -192,16 +194,24 @@ footer p {
         width: 70%;
         max-width: 430px;
     } 
-    
-    .first article,
-    .third article {
-        position: relative;
-        left: 24%;
+     
+    .first p,
+    .third p,
+    .first h3, 
+    .third h3 {
+        margin-left: 25%;
     }
     
-    .second article {
+    .second p,
+    .second h3
+    {
+        margin-left: 10%;
+    }
+
+    .first p,
+    .second p,
+    .third p {
         position: relative;
-        left: 10%;
     }
     
     .first p::before {
@@ -212,8 +222,8 @@ footer p {
         color: #e579d7;
         position: absolute;
         z-index: -1;
-        top: 120px;
-        left: -108px;
+        top: 80px;
+        left: -112px;
     }
     
     .third p::before {
@@ -224,10 +234,10 @@ footer p {
         color: #e579d7;
         position: absolute;
         z-index: -1;
-        top: 120px;
-        left: -108px;
+        top: 70px;
+        left: -112px;
     }
-    
+
     .second p::before {
         content: "2.";
         font-family: 'Montserrat', sans-serif;
@@ -236,8 +246,8 @@ footer p {
         color: #fb8097;
         position: absolute;
         z-index: -1;
-        right: 100px;
-        top: 130px;
+        left: 60%;
+        top: 80px;
     }
     
     h3 {
