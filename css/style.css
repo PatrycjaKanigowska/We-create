@@ -1,10 +1,10 @@
 @import url(reset.css);
 
+/* ------------------------------Basic styles------------------------------------ */
+
 html {
-    //font-size: 62.5%;
-    //font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 body {
@@ -22,54 +22,6 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background-image: linear-gradient(
-    60deg,
-    #fe6a82 10%,
-    #9225f0 
-    );
-}
-
-nav li {
-    font-size: 30px;
-    line-height: 48px;
-}
-
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-nav a:link,
-nav a:active,
-nav a:hover,
-nav a:visited { 
-    color: #582782;
-}
-
-ul {
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-h1 {
-    font-size: 55px;
-    //line-height: 60px;
-}
-
-.tagline {
-    font-size: 30px;
-    line-height: 36px;
-    font-family: 'Roboto', sans-serif;
-}
-
-h1, .tagline {
-    color: #fff;
-    padding-bottom: 30px;
-}
-
-
-
 .tagline, h1, li, h2, footer p {
     text-align: center;
 }
@@ -79,7 +31,60 @@ input, label, textarea, .btn, img {
     margin: 0 auto;
 }
 
-h1{
+img {
+    max-width: 100%;
+}
+
+h3,
+p,
+img, 
+h2 {
+    padding-bottom: 15px;
+}
+
+/* ------------------------------Fonts------------------------------------ */
+
+h2, h3, footer p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.btn {
+    font-size: 18px;
+}
+
+nav li, h3 {
+    font-size: 28px;
+}
+
+.tagline {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+p {
+    line-height: 22px;
+}
+
+.tagline {
+    line-height: 36px;
+}
+
+h2, nav li {
+    line-height: 48px;
+}
+
+h1 {
     font-weight: bold;
 }
 
@@ -87,35 +92,97 @@ a {
     font-weight: 500;
 }
 
-img {
-    max-width: 100%;
-}
-
-
 h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #5f1b98;
     font-weight: 700;
 }
 
-h2 {
-    font-size: 48px;
-    line-height: 48px;
+h1, .tagline {
+    color: #fff;
+}
+
+h2, h3 {
+    color: #5f1b98;
+}
+
+nav a:link,
+nav a:active,
+nav a:hover,
+nav a:visited { 
+    color: #582782;
+}
+
+.btn, input {
+    color: #420e73;
+}
+
+footer {
+    color: #450c75;
+}
+
+a {
+    text-decoration: none;
 }
 
 h3 {
-    font-size: 24px;
+    letter-spacing: 2px;
 }
 
-.first p {
-    line-height: 16px;
+footer p, a {
+    text-transform: uppercase;
+}
+
+/* ------------------------------Header------------------------------------ */
+
+header {
+    background-image: linear-gradient(
+    60deg,
+    #fe6a82 10%,
+    #9225f0 
+    );
+}
+
+ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tagline {
+    padding-bottom: 32px;
+}
+
+/* ------------------------------Footer------------------------------------ */
+
+footer {
+    background-image: linear-gradient(
+    50deg,
+    #fe7fc4 30%,
+    #9729ee
+    );
+}
+
+input {
+    border-bottom: 2px solid #440c74;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    padding-top: 10px;
+    box-shadow: none;
+}
+
+input, textarea {
+    width: 100%;
+    background: none;
+}
+
+textarea {
+    border: 2px solid #440c74;
+    resize: none;
+    margin-bottom: 15px;
 }
 
 .btn {
-    font-size: 17px;
     border: 2px solid #c244c2;
-    color: #420e73;
-    padding: 8px 16px;
+    padding: 10px 20px;
     background: none;
     cursor: pointer;
 }
@@ -131,43 +198,6 @@ h3 {
     padding: 8px 49px;
 }
 
-footer {
-    color: #450c75;
-    background-image: linear-gradient(
-    50deg,
-    #fe7fc4 30%,
-    #9729ee
-    );
-}
-
-input {
-    border-bottom: .2rem solid #440c74;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    color: #420e73;
-    padding-top: 1rem;
-    box-shadow: none;
-}
-
-input, textarea {
-    width: 100%;
-    background: none;
-}
-
-textarea {
-    border: .2rem solid #440c74;
-    resize: none;
-    margin-bottom: 15px;
-}
-
-h3,
-p,
-img, 
-h2 {
-    padding-bottom: 15px;
-}
-
 label {
     padding-top: 15px;
 }
@@ -177,9 +207,6 @@ label:last-of-type {
 }
 
 footer p {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 10px;
     padding-top: 15px;
     padding-bottom: 0;
 }
