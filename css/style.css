@@ -96,6 +96,18 @@ h2, h3 {
     font-weight: 700;
 }
 
+h3 {
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer p, a {
+    text-transform: uppercase;
+}
+
 h1, .tagline {
     color: #fff;
 }
@@ -117,18 +129,6 @@ nav a:visited {
 
 footer {
     color: #450c75;
-}
-
-a {
-    text-decoration: none;
-}
-
-h3 {
-    letter-spacing: 2px;
-}
-
-footer p, a {
-    text-transform: uppercase;
 }
 
 /* ------------------------------Header------------------------------------ */
@@ -211,17 +211,75 @@ footer p {
     padding-bottom: 0;
 }
 
+/* ------------------------480px-767px--------------------------------- */
+
 @media (min-width: 480px) {
    
+    .btn {
+        font-size: 22px;
+    } 
+    
+    h3 {
+        font-size: 34px;
+        letter-spacing: 5px;
+    }
+    
     .first p,
     .second p,
     .third p {
-        font-size: 16px;
         line-height: 26px;
+    } 
+    
+    .first p::before,
+    .second p::before,
+    .third p::before {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 290px;
+        font-weight: 700;
+    }
+    
+    .first p::before,
+    .third p::before {
+        color: #e579d7;
+    }
+    
+    .second p::before {
+        color: #fb8097;
+    }
+    
+    .first p::before {
+        content: "1.";
+        top: 80px;
+        left: -112px;
+    }
+    
+    .third p::before {
+        content: "3.";
+        top: 70px;
+        left: -112px;
+    }
+
+    .second p::before {
+        content: "2.";
+        top: 80px;
+        left: 60%;
+    }
+    
+    .first p,
+    .second p,
+    .third p {
+        position: relative;
         width: 70%;
         max-width: 430px;
     } 
-     
+    
+    .first p::before,
+    .second p::before,
+    .third p::before {
+        position: absolute;
+        z-index: -1;
+    }
+    
     .first p,
     .third p,
     .first h3, 
@@ -234,62 +292,11 @@ footer p {
     {
         margin-left: 10%;
     }
-
-    .first p,
-    .second p,
-    .third p {
-        position: relative;
-    }
-    
-    .first p::before {
-        content: "1.";
-        font-family: 'Montserrat', sans-serif;
-        font-size: 290px;
-        font-weight: 700;
-        color: #e579d7;
-        position: absolute;
-        z-index: -1;
-        top: 80px;
-        left: -112px;
-    }
-    
-    .third p::before {
-        content: "3.";
-        font-family: 'Montserrat', sans-serif;
-        font-size: 290px;
-        font-weight: 700;
-        color: #e579d7;
-        position: absolute;
-        z-index: -1;
-        top: 70px;
-        left: -112px;
-    }
-
-    .second p::before {
-        content: "2.";
-        font-family: 'Montserrat', sans-serif;
-        font-size: 290px;
-        font-weight: 700;
-        color: #fb8097;
-        position: absolute;
-        z-index: -1;
-        left: 60%;
-        top: 80px;
-    }
-    
-    h3 {
-        font-size: 34px;
-        letter-spacing: 5px;
-    }
     
     .btn {
-        font-size: 22px;
         padding: 10px 20px;
     } 
-    
-    label {
-        font-size: 16px;
-    }
+
 }
 
 @media (min-width: 768px) {
