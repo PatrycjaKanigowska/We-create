@@ -22,6 +22,12 @@ body {
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .tagline, h1, li, h2, footer p {
     text-align: center;
 }
@@ -33,6 +39,12 @@ input, label, textarea, .btn, img {
 
 img {
     max-width: 100%;
+}
+
+.img1-1,
+.img2-1,
+.img3-1 {
+    display: none;
 }
 
 h3,
@@ -187,9 +199,9 @@ textarea {
     cursor: pointer;
 }
 
-.btn1_1,
-.btn2_1,
-.btn3_1 {
+.btn1-1,
+.btn2-1,
+.btn3-1 {
     display: none;
 }
 
@@ -211,7 +223,7 @@ footer p {
     padding-bottom: 0;
 }
 
-/* ------------------------480px-767px--------------------------------- */
+/* ------------------------480px-954px--------------------------------- */
 
 @media (min-width: 480px) {
    
@@ -220,15 +232,115 @@ footer p {
     } 
     
     h3 {
-        font-size: 34px;
+        font-size: 32px;
         letter-spacing: 5px;
     }
     
-    .first p,
-    .second p,
-    .third p {
-        line-height: 26px;
+    .img1-1,
+    .img2-1,
+    .img3-1 {
+        display: block;
+    }
+
+    .img1-2,
+    .img2-2,
+    .img3-2 {
+        display: none;
+    }
+    
+    .first img,
+    .second img,
+    .third img {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    
+    .first img,
+    .third img {
+        float: right;
+        margin-top: -20px;
+        margin-left: 15px;
+        padding: 0;
+    }
+    
+    .second img {
+        float: left;
+        margin-right: 15px;
+        padding: 0;
+    }
+    
+    .btn {
+        padding: 10px 20px;
     } 
+    
+    .btn1-2,
+    .btn2-2,
+    .btn3-2 {
+        display: none;
+    }
+    
+    .btn1-1,
+    .btn2-1,
+    .btn3-1 {
+        display: block;
+    }
+}
+
+/* ------------------------955px--------------------------------- */
+
+@media (min-width: 955px) {
+
+    .first article {
+        margin-left: 120px;
+    }
+    
+    .third article {
+        margin-left: 170px;
+    } 
+    
+    .first img
+    .third img {
+        padding-left: 6%;
+    }
+    
+    .first img {
+        margin-bottom: 70px;
+    }
+    
+    
+    .second p {
+        display: inline-block;
+        max-width: 420px;
+    }
+    
+    .second img {
+        margin-right: 115px;
+    }
+    
+    .btn {
+        margin-left: 0;
+    }
+    
+    .first p::before {
+        content: "1.";
+        left: -112px;
+    }
+    
+    .third p::before {
+        content: "3.";
+        left: -170px;
+    }
+
+    .first p::before,
+    .third p::before {
+        color: #e579d7;
+    }
+    
+    .second p::before {
+        content: "2.";
+        left: -100px;
+        color: #fb8097;
+    }
     
     .first p::before,
     .second p::before,
@@ -236,89 +348,23 @@ footer p {
         font-family: 'Montserrat', sans-serif;
         font-size: 290px;
         font-weight: 700;
-    }
-    
-    .first p::before,
-    .third p::before {
-        color: #e579d7;
-    }
-    
-    .second p::before {
-        color: #fb8097;
-    }
-    
-    .first p::before {
-        content: "1.";
-        top: 80px;
-        left: -112px;
-    }
-    
-    .third p::before {
-        content: "3.";
-        top: 70px;
-        left: -112px;
-    }
-
-    .second p::before {
-        content: "2.";
-        top: 80px;
-        left: 60%;
+        position: absolute;
+        z-index: -1;
+        top: 40px;
     }
     
     .first p,
     .second p,
     .third p {
         position: relative;
-        width: 70%;
-        max-width: 430px;
-    } 
-    
-    .first p::before,
-    .second p::before,
-    .third p::before {
-        position: absolute;
-        z-index: -1;
+        line-height: 26px;
     }
     
-    .first p,
-    .third p,
-    .first h3, 
-    .third h3 {
-        margin-left: 25%;
+    article p {
+        font-size: 20px;
+        line-height: 30px;
     }
-    
-    .second p,
-    .second h3
-    {
-        margin-left: 10%;
-    }
-    
-    .btn {
-        padding: 10px 20px;
-    } 
-
-}
-
-@media (min-width: 768px) {
-   
-    .first .container {
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .first .item-1 {
-        flex-basis: 50%;
-        
-    }
-    
-    .first .item-2 {
-        flex-basis: 40%;
-    }
-    
-    .first img {
-        margin-top: 30px;
-    }
-}   
+} 
 
 
 
