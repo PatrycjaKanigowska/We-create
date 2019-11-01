@@ -59,6 +59,7 @@ h3,
 p,
 img, 
 h2 {
+    padding-top: 30px;
     padding-bottom: 15px;
 }
 
@@ -185,20 +186,21 @@ input {
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
-    padding: 10px;
     box-shadow: none;
 }
 
 input, textarea {
     width: 100%;
     background: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
 }
 
 textarea {
     border: 2px solid #440c74;
     resize: none;
     margin-bottom: 15px;
-    padding: 10px;
 }
 
 .btn {
@@ -228,8 +230,8 @@ label:last-of-type {
 }
 
 footer p {
-    padding-top: 15px;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* ------------------------480px-954px--------------------------------- */
@@ -277,12 +279,6 @@ footer p {
         margin-right: 15px;
         padding: 0;
     }
-    
-/*
-    .btn {
-        padding: 10px 20px;
-    } 
-*/
     
     .btn1-2,
     .btn2-2,
