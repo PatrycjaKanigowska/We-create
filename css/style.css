@@ -1,7 +1,6 @@
 @import url(reset.css);
 
 /* ------------------------------Basic styles------------------------------------ */
-
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -22,8 +21,8 @@ section, .ideas {
     margin-top: 20px;
 }
 
-section:last-of-type {
-    margin-bottom: 20px;
+section {
+    margin-bottom: 30px;
 }
 
 * {
@@ -49,12 +48,6 @@ img {
     max-width: 100%;
 }
 
-.img1-1,
-.img2-1,
-.img3-1 {
-    display: none;
-}
-
 h3,
 p,
 img, 
@@ -67,14 +60,14 @@ footer h2 {
 }
 
 /* ------------------------------Fonts------------------------------------ */
-
 h2, h3, footer p {
     font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     font-size: 65px;
-    line-height: 45px;
+    line-height: 55px;
+    padding-bottom: 10px;
     font-weight: bold;
 }
 
@@ -92,7 +85,7 @@ h3 {
 
 .tagline {
     font-size: 30px;
-    line-height: 36px;
+    line-height: 30px;
 }
 
 footer h2 {
@@ -157,7 +150,6 @@ footer {
 }
 
 /* ------------------------------Header------------------------------------ */
-
 header {
     background-image: linear-gradient(
     60deg,
@@ -176,7 +168,6 @@ ul {
 }
 
 /* ------------------------------Ideas------------------------------------ */
-
 .ideas {
     background-image: url(../img/fullbg.jpg);
     background-size: cover;
@@ -185,10 +176,10 @@ ul {
 
 .ideas h2 {
     padding: 70px 0;
+    letter-spacing: 3px;
 }
 
 /* ------------------------------Footer------------------------------------ */
-
 footer {
     background-image: linear-gradient(
     50deg,
@@ -226,12 +217,6 @@ textarea {
     cursor: pointer;
 }
 
-.btn1-1,
-.btn2-1,
-.btn3-1 {
-    display: none;
-}
-
 .btn4 {
     border: 2px solid #fff;
     padding: 10px 63px;
@@ -251,30 +236,12 @@ footer p {
 }
 
 /* ------------------------480px--------------------------------- */
-
 @media (min-width: 480px) {
-   
-    .btn {
-        font-size: 22px;
-    } 
     
-    h3 {
-        font-size: 32px;
-        letter-spacing: 5px;
+    article p {
+        line-height: 26px;
     }
-    
-    .img1-1,
-    .img2-1,
-    .img3-1 {
-        display: block;
-    }
-
-    .img1-2,
-    .img2-2,
-    .img3-2 {
-        display: none;
-    }
-    
+     
     .first img,
     .second img,
     .third img {
@@ -286,34 +253,57 @@ footer p {
     .third img {
         float: right;
         margin-top: -20px;
-        margin-left: 15px;
+        margin-left: 5%;
         padding: 0;
     }
     
     .second img {
         float: left;
-        margin-right: 15px;
+        margin-top: -40px;
+        margin-right: 3%;
         padding: 0;
     }
     
-    .btn1-2,
-    .btn2-2,
-    .btn3-2 {
-        display: none;
-    }
-    
-    .btn1-1,
-    .btn2-1,
-    .btn3-1 {
-        display: block;
+    .second h3 {
+        display: inline-block;
+        margin-left: 43%;
     }
 }
 
 /* ------------------------768px--------------------------------- */
-
 @media (min-width: 768px) {
     
-
+    a { 
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 145px;
+        line-height: 65px;
+        font-weight: bold;
+        padding-top: 9vh;
+    }
+    
+    .tagline {
+        font-size: 28px;
+        padding-top: 30px;
+        padding-bottom: 18vh;
+    }
+    
+    h3 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    
+    .ideas h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    
+    .btn {
+        font-size: 20px;
+    } 
+    
     ul li {
         display: inline-block;
         padding: 10px 10px;
@@ -323,74 +313,92 @@ footer p {
         text-align: center;
     }
     
-    a { 
-        font-size: 16px;
+    section {
+        margin-top: 40px;
+        margin-bottom: 50px;
     }
     
-    .ideas h2 {
-        font-size: 70px;
-        line-height: 70px;
-    }
-    
-    .tagline {
-        font-size: 28px;
-        padding-top: 30px;
-        padding-bottom: 18vh;
-    }
-    
-    h1 {
-        font-size: 145px;
-        line-height: 65px;
-        font-weight: bold;
-        padding-top: 9vh;
-    }
+    footer h2 {
+        padding-top: 90px;
+    }  
 }
 
-
 /* ------------------------955px--------------------------------- */
-
-@media (min-width: 955px) {
-
-    .first article {
-        margin-left: 120px;
+@media (min-width: 1050px) {
+ 
+    h3 {
+        font-size: 32px;
     }
     
-    .third article {
-        margin-left: 170px;
-    } 
+    article p {
+        font-size: 17px;
+    }
     
-    .first img
+    .btn {
+        font-size: 22px;
+    }
+    
+    footer h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    
+    .first img,
+    .second img,
     .third img {
-        padding-left: 6%;
+        width: 100%;
     }
     
+    .second h3 {
+        display: block;
+        margin-left: 0;
+    }
+
     .first img {
-        margin-bottom: 70px;
-    }
-    
-    .second p {
-        display: inline-block;
-        max-width: 420px;
+        margin-top: 40px;
     }
     
     .second img {
-        margin-right: 115px;
+        margin-top: -30px;
     }
     
-    .first .btn,
-    .second .btn,
-    .third .btn {
-        margin-left: 0;
+    .third img {
+        margin-top: 20px;
+    }
+    
+    .ideas h2 {
+        padding: 17vh 0;
+    }
+    
+    .ideas {
+        background-position: center 9%;
+    }
+    
+    .btn {
+        margin-left: 0; 
+    }
+    
+    section {
+        margin-bottom: 100px;
+    }
+
+/* ---Pseudo elements--- */
+    .first p,
+    .second p,
+    .third p {
+        position: relative;
     }
     
     .first p::before {
         content: "1.";
         left: -112px;
+        letter-spacing: 20px;
     }
     
     .third p::before {
         content: "3.";
-        left: -170px;
+        left: -220px;
+        letter-spacing: 70px;
     }
 
     .first p::before,
@@ -400,10 +408,11 @@ footer p {
     
     .second p::before {
         content: "2.";
-        left: -100px;
+        left: -130px;
+        letter-spacing: 50px;
         color: #fb8097;
     }
-    
+
     .first p::before,
     .second p::before,
     .third p::before {
@@ -415,36 +424,57 @@ footer p {
         top: 40px;
     }
     
-    .first p,
-    .second p,
-    .third p {
-        position: relative;
-        line-height: 26px;
+ /* ---CSS Grid--- */   
+     article {
+        display: grid;
+    }
+
+    article figure {
+        grid-area: f;
     }
     
+    article h3 {
+        grid-area: h;
+    }
+
     article p {
-        font-size: 20px;
-        line-height: 30px;
-    }
-    
-    .ideas h2 {
-        padding: 17vh 0;
-    }
-    
-    .ideas {
-        background-position: center 9%;
-    }
-    
-    footer h2 {
-        font-size: 60px;
-        line-height:  60px;
+        grid-area: p;
     }
 
+    article button {
+        grid-area: b;
+    }
     
-
-} 
-
-
-
-
+    .first article,
+    .second article,
+    .third article {
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: minmax(30px, auto) auto 51px auto;
+        grid-gap: 5px;
+    }
+    
+    .first article {
+        grid-template-areas:
+            ". . h h h h h h h h . f f f f f f f f f"
+            ". . p p p p p p p p . f f f f f f f f f"
+            ". . b b b b b b b b . f f f f f f f f f"
+            ". . . . . . . . . . . f f f f f f f f f";
+    }
+    
+    .second article {
+        grid-template-areas:
+            "f f f f f f f f f . . . h h h h h h h h"
+            "f f f f f f f f f . . . p p p p p p p p"
+            "f f f f f f f f f . . . b b b b b b b b"
+            "f f f f f f f f f . . . . . . . . . . .";
+    }
+    
+    .third article {
+        grid-template-areas:
+            ". . . . h h h h h h h h . f f f f f f f"
+            ". . . . p p p p p p p p . f f f f f f f"
+            ". . . . b b b b b b b b . f f f f f f f"
+            ". . . . . . . . . . . . . f f f f f f f";
+    }
+}
 
