@@ -18,11 +18,11 @@ body {
 }
 
 section, .ideas {
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-section {
-    margin-bottom: 30px;
+.first {
+    margin-top: 20px;
 }
 
 * {
@@ -175,7 +175,7 @@ ul {
 }
 
 .ideas h2 {
-    padding: 70px 0;
+    padding: 70px 20px;
     letter-spacing: 3px;
 }
 
@@ -235,6 +235,11 @@ footer p {
     padding-bottom: 10px;
 }
 
+footer form {
+    width: 400px;
+    margin: 0 auto;
+}
+
 /* ------------------------480px--------------------------------- */
 @media (min-width: 480px) {
     
@@ -253,7 +258,7 @@ footer p {
     .third img {
         float: right;
         margin-top: -20px;
-        margin-left: 5%;
+        margin-left: 3%;
         padding: 0;
     }
     
@@ -268,6 +273,15 @@ footer p {
         display: inline-block;
         margin-left: 43%;
     }
+    
+     section, .ideas {
+        margin-bottom: 40px;
+    }
+
+    .first {
+        margin-top: 40px;
+    }
+    
 }
 
 /* ------------------------768px--------------------------------- */
@@ -300,10 +314,6 @@ footer p {
         line-height: 70px;
     }
     
-    .btn {
-        font-size: 20px;
-    } 
-    
     ul li {
         display: inline-block;
         padding: 10px 10px;
@@ -313,17 +323,48 @@ footer p {
         text-align: center;
     }
     
-    section {
-        margin-top: 40px;
-        margin-bottom: 50px;
+    section, .ideas {
+        margin-bottom: 30px;
+    }
+
+    .first {
+        margin-top: 30px;
     }
     
     footer h2 {
         padding-top: 90px;
     }  
+    
+    footer form {
+        padding: 15px 0;
+    }
+    
+    /* ---CSS Grid--- */ 
+    footer .container {
+        display: grid;
+        grid-template-columns: auto 400px;
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 20px;
+        grid-template-areas:
+            "h f"
+            "h f"
+            "p f";
+    }
+    
+    footer h2 {
+        grid-area: h;
+    }
+    
+    footer form {
+        grid-area: f;
+    }
+
+    footer p {
+        grid-area: p;
+    }
 }
 
-/* ------------------------955px--------------------------------- */
+/* ------------------------1050px--------------------------------- */
 @media (min-width: 1050px) {
  
     h3 {
@@ -332,10 +373,6 @@ footer p {
     
     article p {
         font-size: 17px;
-    }
-    
-    .btn {
-        font-size: 22px;
     }
     
     footer h2 {
@@ -378,11 +415,15 @@ footer p {
         margin-left: 0; 
     }
     
-    section {
-        margin-bottom: 100px;
+    section, .ideas {
+        margin-bottom: 50px;
     }
 
-/* ---Pseudo elements--- */
+    .first {
+        margin-top: 50px;
+    }
+
+    /* ---Pseudo elements--- */
     .first p,
     .second p,
     .third p {
@@ -424,7 +465,7 @@ footer p {
         top: 40px;
     }
     
- /* ---CSS Grid--- */   
+    /* ---CSS Grid--- */   
      article {
         display: grid;
     }
@@ -449,7 +490,7 @@ footer p {
     .second article,
     .third article {
         grid-template-columns: repeat(20, 1fr);
-        grid-template-rows: minmax(30px, auto) auto 51px auto;
+        grid-template-rows: minmax(30px, auto) auto 45px auto;
         grid-gap: 5px;
     }
     
@@ -477,4 +518,5 @@ footer p {
             ". . . . . . . . . . . . . f f f f f f f";
     }
 }
+
 
