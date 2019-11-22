@@ -102,12 +102,19 @@ p {
     line-height: 22px;
 }
 
-a { 
+header a { 
     font-size: 28px;
     line-height: 48px;
     font-weight: 700;
-    text-decoration: none;
     display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    font-weight: 600;
 }
 
 h2, h3 {
@@ -118,7 +125,7 @@ h3 {
     letter-spacing: 2px;
 }
 
-footer p, a {
+a {
     text-transform: uppercase;
 }
 
@@ -288,7 +295,7 @@ footer form {
 /* ------------------------768px--------------------------------- */
 @media (min-width: 768px) {
     
-    a { 
+    header a { 
         font-size: 16px;
     }
     
