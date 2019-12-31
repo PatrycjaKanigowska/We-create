@@ -2,4 +2,4 @@
 
 Live: https://patrycjakanigowska.github.io/We-create/
 
-Created with: HTML, CSS, CSS Grid, RWD, Progressive enhancement
+Created with: HTML, CSS, CSS Grid, RWD, Mobile First
